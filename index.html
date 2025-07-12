@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Qual princesa você seria?</title>
+
+  <!-- Fonte do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Favicon (ícone da aba) -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3105/3105783.png">
+
+  <style>
+    /* Estilização do corpo */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #ffa5ba;
+      font-family: 'Merienda', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Container centralizado */
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #ff69b4;
+    }
+
+    p {
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #ff0080, #ff8c00, #ffd700);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 22px;
+      font-family: 'Pacifico', cursive;
+      letter-spacing: 1px;
+      box-shadow: 0 0 10px #fff, 0 0 20px #ff00cc, 0 0 30px #ffcc00;
+      transition: 0.3s ease-in-out;
+      animation: brilho 3s infinite alternate;
+      overflow: hidden;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+      transform: skewX(-25deg);
+      animation: brilho-passe 3s infinite;
+    }
+
+    @keyframes brilho {
+      0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #ff00cc, 0 0 15px #ffcc00;
+      }
+      100% {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff00cc, 0 0 40px #ffcc00;
+      }
+    }
+
+    @keyframes brilho-passe {
+      0% {
+        left: -75%;
+      }
+      100% {
+        left: 125%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>👑 Qual Princesa Você Seria?</h1>
+    <p>Clique e descubra: Qual princesa vive em você!</p>
+    <img src="https://roteirobaby.com.br/wp-content/uploads/2017/03/Princesas-disney.png" alt="Princesas da Disney">
+    <a href="https://pt.quizur.com/quiz/qual-princesa-da-disney-e-voce-SWd4" target="_blank">
+      Descubra Sua Princesa
+    </a>
+  </div>
+</body>
+</html>
